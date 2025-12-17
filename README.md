@@ -185,7 +185,7 @@ _Ekran görüntüleri eklenecek_
 ## 👨‍💻 Geliştirici
 
 - **İsmail SAMURKAŞ**
-- E-posta: ismail@samurrentacar.com
+- E-posta: ismailismailsamurkas@gmail.com
 
 ## 🤝 Katkıda Bulunma
 
