@@ -174,7 +174,7 @@ Varsayılan admin hesabı otomatik olarak oluşturulur:
 
 - **Kullanıcı Adı:** `admin`
 - **Şifre:** `123`
-- **TC Kimlik:** `12218838160`
+- **TC Kimlik:** `12213233242`
 
 > ⚠️ **Güvenlik Uyarısı:** Üretim ortamında mutlaka admin şifresini değiştirin!
 
@@ -205,7 +205,7 @@ Bu proje [MIT Lisansı](LICENSE) altında lisanslanmıştır.
 
 Sorularınız veya önerileriniz için:
 - **GitHub Issues:** Proje sayfasından issue açabilirsiniz
-- **E-posta:** ismail@samurrentacar.com
+- **E-posta:** ismailismailsamurkas@gmail.com
 
 ---
 
