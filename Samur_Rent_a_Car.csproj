@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7A767AFB-0493-4775-B46D-C01256DC2251}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Samur_Rent_a_Car</RootNamespace>
+    <AssemblyName>Samur_Rent_a_Car</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+    <GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Data.SQLite.Core" Version="1.0.119.0" />
+    <PackageReference Include="System.Memory" Version="4.5.5" />
+    <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="6.0.0" />
+    <PackageReference Include="System.Resources.Extensions" Version="6.0.0" GeneratePathProperty="true" />
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Resources.Extensions">
+      <HintPath>$(NuGetPackageRoot)system.resources.extensions\6.0.0\lib\net461\System.Resources.Extensions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaForm.Designer.cs">
+      <DependentUpon>AnaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Araclar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Araclar.Designer.cs">
+      <DependentUpon>Araclar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="istatistikler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="istatistikler.Designer.cs">
+      <DependentUpon>istatistikler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kayıt_ol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kayıt_ol.Designer.cs">
+      <DependentUpon>kayıt_ol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VeriTabani.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kullaniciler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kullaniciler.Designer.cs">
+      <DependentUpon>Kullaniciler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="iletisim_ve_yardım.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iletisim_ve_yardım.Designer.cs">
+      <DependentUpon>iletisim_ve_yardım.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AnaForm.resx">
+      <DependentUpon>AnaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Araclar.resx">
+      <DependentUpon>Araclar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="istatistikler.resx">
+      <DependentUpon>istatistikler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kayıt_ol.resx">
+      <DependentUpon>kayıt_ol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kullaniciler.resx">
+      <DependentUpon>Kullaniciler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iletisim_ve_yardım.resx">
+      <DependentUpon>iletisim_ve_yardım.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RESİMLER\LOGO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RESİMLER\otomobil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RESİMLER\motosiklet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RESİMLER\bisiklet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RESİMLER\kamyon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RESİMLER\logom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="logo\unnamed.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
